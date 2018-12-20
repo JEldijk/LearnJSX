@@ -19,19 +19,20 @@ style = {
 */
 // create a react component
 const App = () => {
-  const buttonText = 'Submit';
-  const labelText = 'Enter name';
+  const buttonText = "Submit";
+  const labelText = "Enter name";
 
-  return <div>
+  return (
+    <div>
       <label className="label" htmlFor="name">
         {labelText}
       </label>
-      <input id="name" type="text" />><button
-        style={{ backgroundColor: "blue", color: "white" }}
-      >
+      <input id="name" type="text" />>
+      <button style={{ backgroundColor: "blue", color: "white" }}>
         {buttonText}
       </button>
-    </div>;
+    </div>
+  );
 };
 
 // take the react component and place it on the screen
